@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayla's Personal Profile | Profile Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <ul class="menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="../quiz1.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hometown.html">Hometown</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="food.html">Local Food</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tourist.html">Tourist Places</a>
+            </li>
+        </ul>
+    </div>
+    <section class="food" id="food">
+        <div class="title">
+            <h2>CULINARY</h2>
+            <br>
+            <p>There are not a lot of traditional foods originated from South Tangerang, but here are a few
+                of the many delicious Indonesian local foods you can try when visiting South Tangerang:
+            </p>
+        </div>
+        <div class="content">
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/keraktelor.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Kerak Telor</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/ketoprak.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Ketoprak</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/nasiuduk.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Nasi Uduk</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/pempek.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Pempek</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/sotobetawi.jpeg">
+                </div>
+                <div class="textBx">
+                    <h3>Soto Betawi</h3>
+                </div>
+            </div>
+            <div class="foodBx">
+                <div class="imgBx">
+                    <img src="../images/tongseng.jpg">
+                </div>
+                <div class="textBx">
+                    <h3>Tongseng Kambing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- JavaScript Implementation -->
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navbar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
